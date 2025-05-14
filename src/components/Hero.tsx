@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+// import { ChevronDown } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -51,8 +51,20 @@ const Hero: React.FC = () => {
           </div>
         </div>
 
+        <div className={`fixed bottom-8 left-1/2 transform -translate-x-1/2 z-20 transition-opacity duration-500 ${scrolled ? 'opacity-0' : 'opacity-100'}`}>
+           <a
+             href="#features"
+            className="flex flex-col items-center text-white/80 hover:text-white transition-colors"
+           >
+             <span className="mb-2 text-sm font-medium">Discover More</span>
+             <div className="w-8 h-12 border-2 border-white/50 rounded-full flex justify-center">
+               <div className="w-1 h-3 bg-white/80 rounded-full mt-2 animate-bounce"></div>
+             </div>
+           </a>
+         </div>
+
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+        {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
           <a 
             href="#features" 
             className="flex flex-col items-center text-white/80 hover:text-white transition-colors"
@@ -60,7 +72,7 @@ const Hero: React.FC = () => {
             <span className="mb-2 text-sm font-medium">Scroll Down</span>
             <ChevronDown className="animate-bounce" size={24} />
           </a>
-        </div>
+        </div> */}
       </div>
 
       {/* Floating bottles */}
@@ -75,7 +87,7 @@ const Hero: React.FC = () => {
           <img 
             src="https://images.pexels.com/photos/4389686/pexels-photo-4389686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" 
             alt="Water jar" 
-            className="w-32 h-auto object-contain absolute -top-24 -right-16 animate-float rounded-full shadow-lg"
+            className="w-24 h-auto object-contain absolute -top-24 -right-16 animate-float rounded-full shadow-lg"
             style={{ animationDelay: '0.5s' }}
           />
           <img 
@@ -86,6 +98,49 @@ const Hero: React.FC = () => {
           />
         </div>
       </div>
+
+       {/* <div className="hidden lg:block absolute right-10 top-1/2 transform -translate-y-1/2 z-10">
+         <div className="relative">
+           <div className="relative">
+             <img
+            src="https://images.pexels.com/photos/1000084/pexels-photo-1000084.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" 
+               alt="Premium water bottle"
+               className="w-32 h-auto object-contain rounded-full shadow-lg"
+               style={{ 
+                 animation: 'float 6s ease-in-out infinite',
+                 animationDelay: '0s' 
+               }}
+             />
+             <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-3/4 h-4 bg-white/10 rounded-full blur-md"></div>
+           </div>
+        
+           <div className="absolute -top-20 -right-10">
+             <img
+            src="https://images.pexels.com/photos/1000084/pexels-photo-1000084.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" 
+               alt="Water jar"
+               className="w-36 h-auto object-contain rounded-full shadow-lg"
+              style={{ 
+                 animation: 'float 8s ease-in-out infinite',
+                 animationDelay: '0.5s' 
+               }}
+             />
+             <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-3/4 h-4 bg-white/10 rounded-full blur-md"></div>
+           </div>
+        
+           <div className="absolute top-20 -right-16">
+             <img
+            src="https://images.pexels.com/photos/1000084/pexels-photo-1000084.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" 
+              alt="Small bottle"
+               className="w-28 h-auto object-contain rounded-full shadow-lg"
+               style={{ 
+                 animation: 'float 7s ease-in-out infinite',
+                 animationDelay: '1s' 
+               }}
+             />
+             <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-3/4 h-4 bg-white/10 rounded-full blur-md"></div>
+           </div>
+         </div>
+       </div> */}
 
       {/* Water droplet particle effect */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -240,48 +295,48 @@ export default Hero;
 //       </div>
      
 //       {/* Improved floating bottles with reflection effect */}
-//       <div className="hidden lg:block absolute right-10 top-1/2 transform -translate-y-1/2 z-10">
-//         <div className="relative">
-//           <div className="relative">
-//             <img
-//               src="/api/placeholder/240/320"
-//               alt="Premium water bottle"
-//               className="w-32 h-auto object-contain rounded-full shadow-lg"
-//               style={{ 
-//                 animation: 'float 6s ease-in-out infinite',
-//                 animationDelay: '0s' 
-//               }}
-//             />
-//             <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-3/4 h-4 bg-white/10 rounded-full blur-md"></div>
-//           </div>
-          
-//           <div className="absolute -top-20 -right-10">
-//             <img
-//               src="/api/placeholder/200/280"
-//               alt="Water jar"
-//               className="w-36 h-auto object-contain rounded-full shadow-lg"
-//               style={{ 
-//                 animation: 'float 8s ease-in-out infinite',
-//                 animationDelay: '0.5s' 
-//               }}
-//             />
-//             <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-3/4 h-4 bg-white/10 rounded-full blur-md"></div>
-//           </div>
-          
-//           <div className="absolute top-20 -right-16">
-//             <img
-//               src="/api/placeholder/180/260"
-//               alt="Small bottle"
-//               className="w-28 h-auto object-contain rounded-full shadow-lg"
-//               style={{ 
-//                 animation: 'float 7s ease-in-out infinite',
-//                 animationDelay: '1s' 
-//               }}
-//             />
-//             <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-3/4 h-4 bg-white/10 rounded-full blur-md"></div>
-//           </div>
-//         </div>
-//       </div>
+       <div className="hidden lg:block absolute right-10 top-1/2 transform -translate-y-1/2 z-10">
+         <div className="relative">
+           <div className="relative">
+             <img
+               src="/api/placeholder/240/320"
+               alt="Premium water bottle"
+               className="w-32 h-auto object-contain rounded-full shadow-lg"
+               style={{ 
+                 animation: 'float 6s ease-in-out infinite',
+                 animationDelay: '0s' 
+               }}
+             />
+             <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-3/4 h-4 bg-white/10 rounded-full blur-md"></div>
+           </div>
+        
+           <div className="absolute -top-20 -right-10">
+             <img
+               src="/api/placeholder/200/280"
+               alt="Water jar"
+               className="w-36 h-auto object-contain rounded-full shadow-lg"
+              style={{ 
+                 animation: 'float 8s ease-in-out infinite',
+                 animationDelay: '0.5s' 
+               }}
+             />
+             <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-3/4 h-4 bg-white/10 rounded-full blur-md"></div>
+           </div>
+        
+           <div className="absolute top-20 -right-16">
+             <img
+               src="/api/placeholder/180/260"
+              alt="Small bottle"
+               className="w-28 h-auto object-contain rounded-full shadow-lg"
+               style={{ 
+                 animation: 'float 7s ease-in-out infinite',
+                 animationDelay: '1s' 
+               }}
+             />
+             <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-3/4 h-4 bg-white/10 rounded-full blur-md"></div>
+           </div>
+         </div>
+       </div>
       
 //       {/* Water droplet particle effect */}
 //       <div className="absolute inset-0 pointer-events-none overflow-hidden">

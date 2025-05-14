@@ -1,19 +1,18 @@
-// import React from 'react';
-import Navbar from '../../gangothiri2/src/components/Navbar';
-import Hero from '../../gangothiri2/src/components/Hero';
-import Features from '../../gangothiri2/src/components/Features';
-import Products from '../../gangothiri2/src/components/Products';
-import About from '../../gangothiri2/src/components/About';
-import Process from '../../gangothiri2/src/components/Process';
-import Contact from '../../gangothiri2/src/components/Contact';
-import Footer from '../../gangothiri2/src/components/Footer';
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Features from "./components/Features";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import Process from "./components/Process";
+import Products from "./components/Products";
 
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow">
-        <Hero />
+        <Hero/>
         <Features />
         <Products />
         <About />

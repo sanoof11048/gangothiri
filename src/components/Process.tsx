@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
+import water from '../assets/water.jpg';
+import packing from '../assets/packing.png';
+import lab from '../assets/lab.jpg';
+import purification from '../assets/purification.png';
 
 const Process: React.FC = () => {
   const [activeStep, setActiveStep] = useState(0);
@@ -8,12 +12,12 @@ const Process: React.FC = () => {
     {
       title: "Collection & Filtration",
       description: "Water is sourced from deep, natural underground reservoirs and undergoes initial filtration to remove particulates.",
-      image: "https://images.pexels.com/photos/2519212/pexels-photo-2519212.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
+      image: water
     },
     {
       title: "Purification",
       description: "Multi-stage purification process including reverse osmosis, UV treatment, and ozonation to eliminate impurities.",
-      image: "https://images.pexels.com/photos/128421/pexels-photo-128421.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
+      image: purification
     },
     {
       title: "Mineral Enrichment",
@@ -23,12 +27,12 @@ const Process: React.FC = () => {
     {
       title: "Quality Testing",
       description: "Rigorous laboratory testing ensuring every batch meets our strict quality standards and regulatory requirements.",
-      image: "https://images.pexels.com/photos/4031409/pexels-photo-4031409.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
+      image: lab
     },
     {
       title: "Bottling & Packaging",
       description: "Automated, hygienic bottling in our state-of-the-art facility with strict quality control measures.",
-      image: "https://images.pexels.com/photos/2249063/pexels-photo-2249063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
+      image: packing
     }
   ];
 
@@ -109,7 +113,7 @@ const Process: React.FC = () => {
             {/* Navigation buttons */}
             <div className="flex justify-between mt-4">
               <button 
-                className={`p-2 rounded-full border border-primary-200 ${
+                className={`p-2 rounded-full border border-[#B2EBF2] ${
                   activeStep === 0 ? 'text-gray-400 cursor-not-allowed' : 'text-primary-500 hover:bg-primary-50'
                 }`}
                 onClick={() => setActiveStep(prev => Math.max(0, prev - 1))}
@@ -119,7 +123,7 @@ const Process: React.FC = () => {
                 <ArrowRight size={20} className="transform rotate-180" />
               </button>
               <button 
-                className={`p-2 rounded-full border border-primary-200 ${
+                className={`p-2 rounded-full border border-[#B2EBF2] ${
                   activeStep === steps.length - 1 ? 'text-gray-400 cursor-not-allowed' : 'text-primary-500 hover:bg-primary-50'
                 }`}
                 onClick={() => setActiveStep(prev => Math.min(steps.length - 1, prev + 1))}

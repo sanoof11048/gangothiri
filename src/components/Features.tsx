@@ -46,7 +46,7 @@ const Features: React.FC = () => {
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="blob bg-primary-100 top-0 right-0 w-96 h-96 opacity-30"></div>
-        <div className="blob bg-primary-200 bottom-0 left-0 w-72 h-72 opacity-20"></div>
+        <div className="blob bg-[#B2EBF2] bottom-0 left-0 w-72 h-72 opacity-20"></div>
       </div>
       
       <div className="container-custom relative">

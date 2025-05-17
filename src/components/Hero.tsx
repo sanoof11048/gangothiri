@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 // import { ChevronDown } from 'lucide-react';
-
+import bottle from '../assets/bottle.png';
+import jar from  '../assets/Rivus Water Jug on Quartz Countertop.png';
+import dispenser from '../assets/Translucent Water Dispenser in Modern Kitchen.png';
 const Hero: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
 
@@ -76,28 +78,34 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Floating bottles */}
-      <div className="hidden lg:block absolute right-10 top-1/2 transform -translate-y-1/2">
-        <div className="relative">
-          <img 
-            src="https://images.pexels.com/photos/1000084/pexels-photo-1000084.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" 
-            alt="Water bottle" 
-            className="w-28 h-auto object-contain animate-float rounded-full shadow-lg"
-            style={{ animationDelay: '0s' }}
-          />
-          <img 
-            src="https://images.pexels.com/photos/4389686/pexels-photo-4389686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" 
-            alt="Water jar" 
-            className="w-24 h-auto object-contain absolute -top-24 -right-16 animate-float rounded-full shadow-lg"
-            style={{ animationDelay: '0.5s' }}
-          />
-          <img 
-            src="https://images.pexels.com/photos/1346155/pexels-photo-1346155.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" 
-            alt="Small bottle" 
-            className="w-24 h-auto object-contain absolute top-16 -right-20 animate-float rounded-full shadow-lg"
-            style={{ animationDelay: '1s' }}
-          />
-        </div>
-      </div>
+     <div className="hidden lg:block absolute right-10 top-1/2 transform -translate-y-1/2">
+  <div className="relative w-[180px] h-[300px]">
+    {/* Main Bottle */}
+    <img 
+      src={bottle}
+      alt="Water bottle" 
+      className="w-32 h-auto object-contain animate-float rounded-xl shadow-xl mx-auto z-10 relative"
+      style={{ animationDelay: '0s' }}
+    />
+
+    {/* Jar - positioned above to the right */}
+    <img 
+      src={jar} 
+      alt="Water jar" 
+      className="w-20 h-auto object-contain absolute -top-12 -right-8 animate-float rounded-xl shadow-md"
+      style={{ animationDelay: '0.5s' }}
+    />
+
+    {/* Dispenser - positioned below to the right */}
+    <img 
+      src={dispenser} 
+      alt="Dispenser" 
+      className="w-20 h-auto object-contain absolute top-36 -right-10 animate-float rounded-xl shadow-md"
+      style={{ animationDelay: '1s' }}
+    />
+  </div>
+</div>
+
 
        {/* <div className="hidden lg:block absolute right-10 top-1/2 transform -translate-y-1/2 z-10">
          <div className="relative">
@@ -224,7 +232,7 @@ export default Hero;
       
 //       {/* Background blobs with better animation */}
 //       <div className="absolute top-1/4 -right-24 w-96 h-96 rounded-full bg-primary-300/30 blur-3xl animate-pulse"></div>
-//       <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-primary-200/20 blur-3xl animate-pulse" style={{ animationDuration: '8s' }}></div>
+//       <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-[#B2EBF2]/20 blur-3xl animate-pulse" style={{ animationDuration: '8s' }}></div>
 //       <div className="absolute top-1/3 left-1/4 w-64 h-64 rounded-full bg-secondary-400/20 blur-3xl animate-pulse" style={{ animationDuration: '12s' }}></div>
      
 //       <div className="container-custom relative h-full flex flex-col justify-center z-10">
@@ -261,19 +269,19 @@ export default Hero;
 //           <div className="mt-12 grid grid-cols-3 gap-4 max-w-lg">
 //             <div className="flex flex-col items-center text-center text-white/90">
 //               <div className="w-12 h-12 mb-2 flex items-center justify-center rounded-full bg-white/10">
-//                 <Droplets size={24} className="text-primary-200" />
+//                 <Droplets size={24} className="text-[#B2EBF2]" />
 //               </div>
 //               <span className="text-xs md:text-sm">100% Natural</span>
 //             </div>
 //             <div className="flex flex-col items-center text-center text-white/90">
 //               <div className="w-12 h-12 mb-2 flex items-center justify-center rounded-full bg-white/10">
-//                 <Shield size={24} className="text-primary-200" />
+//                 <Shield size={24} className="text-[#B2EBF2]" />
 //               </div>
 //               <span className="text-xs md:text-sm">BIS Certified</span>
 //             </div>
 //             <div className="flex flex-col items-center text-center text-white/90">
 //               <div className="w-12 h-12 mb-2 flex items-center justify-center rounded-full bg-white/10">
-//                 <Award size={24} className="text-primary-200" />
+//                 <Award size={24} className="text-[#B2EBF2]" />
 //               </div>
 //               <span className="text-xs md:text-sm">Premium Quality</span>
 //             </div>

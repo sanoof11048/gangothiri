@@ -1,7 +1,5 @@
 import { Droplet, Mail, Phone} from 'lucide-react';
 import React from 'react';
-import { BsTwitterX } from 'react-icons/bs';
-import { CgYoutube } from 'react-icons/cg';
 import { FaXTwitter, FaYoutube } from 'react-icons/fa6';
 import { RiFacebookCircleFill, RiInstagramFill } from 'react-icons/ri';
 

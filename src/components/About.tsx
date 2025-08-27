@@ -26,7 +26,7 @@ const About: React.FC = () => {
       <div className="container-custom relative">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Text content */}
-          <div>
+          <div data-aos="fade-right">
             <h2 className="mb-6">Our Story</h2>
             <p className="mb-6 text-gray-600">
               Established in 2010, Gangothiri Aqua Processing Unit began with a simple mission: to provide the purest water with perfect mineral balance to every household and business.
@@ -37,13 +37,13 @@ const About: React.FC = () => {
             
             {/* Values */}
             <div className="grid grid-cols-2 gap-6">
-              <div className="rounded-lg p-4 bg-primary-50 border border-primary-100">
+              <div data-aos="zoom-in" data-aos-delay="100" className="rounded-lg p-4 bg-primary-50 border border-primary-100">
                 <h4 className="text-primary-500 font-medium mb-2">Our Vision</h4>
                 <p className="text-sm text-gray-600">
                   To be the leading provider of premium water solutions, enhancing the health and wellbeing of every consumer.
                 </p>
               </div>
-              <div className="rounded-lg p-4 bg-primary-50 border border-primary-100">
+              <div data-aos="zoom-in" data-aos-delay="200" className="rounded-lg p-4 bg-primary-50 border border-primary-100">
                 <h4 className="text-primary-500 font-medium mb-2">Our Promise</h4>
                 <p className="text-sm text-gray-600">
                   Unwavering commitment to quality, sustainability, and customer satisfaction in every drop we deliver.
@@ -53,7 +53,7 @@ const About: React.FC = () => {
           </div>
           
           {/* Image */}
-          <div className="relative">
+          <div data-aos="fade-left">
             <div className="relative rounded-xl overflow-hidden shadow-xl">
               <img 
                 src="https://images.pexels.com/photos/4553035/pexels-photo-4553035.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" 
@@ -70,6 +70,8 @@ const About: React.FC = () => {
           {stats.map((stat, index) => (
             <div 
               key={index}
+              data-aos="fade-up"
+              data-aos-delay={index * 150}
               className="text-center p-6 rounded-lg glass-effect"
             >
               <div className="text-primary-500 mb-3 mx-auto w-12 h-12 flex items-center justify-center bg-primary-50 rounded-full">

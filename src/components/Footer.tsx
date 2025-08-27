@@ -1,4 +1,4 @@
-import { Droplet, Mail, Phone} from 'lucide-react';
+import { Droplet, Mail, Phone } from 'lucide-react';
 import React from 'react';
 import { FaXTwitter, FaYoutube } from 'react-icons/fa6';
 import { RiFacebookCircleFill, RiInstagramFill } from 'react-icons/ri';
@@ -8,18 +8,19 @@ const Footer: React.FC = () => {
     <footer className="bg-primary-900 text-white pt-16 pb-8">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          
           {/* Brand */}
-          <div>
+          <div data-aos="fade-right" data-aos-duration="1000">
             <div className="flex items-center gap-2 mb-6">
               <Droplet
-                size={32} 
+                size={32}
                 strokeWidth={1.5}
                 className="text-[#B2EBF2]"
                 fill="currentColor"
                 fillOpacity={0.2}
               />
               <span className="font-montserrat font-bold text-2xl">
-                <span className="text-[#B2EBF2]">Gangothiri</span> 
+                <span className="text-[#B2EBF2]">Gangothiri</span>
                 <span>Aqua</span>
               </span>
             </div>
@@ -43,7 +44,7 @@ const Footer: React.FC = () => {
           </div>
           
           {/* Quick Links */}
-          <div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
             <ul className="space-y-3">
               {['Home', 'Products', 'About Us', 'Process', 'Contact Us'].map((item) => (
@@ -60,7 +61,7 @@ const Footer: React.FC = () => {
           </div>
           
           {/* Products */}
-          <div>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
             <h3 className="text-lg font-semibold mb-6">Our Products</h3>
             <ul className="space-y-3">
               {['20Ltr Jar', '5Ltr Dispenser', '2Ltr Bottle', '1Ltr Bottle', '500ml Bottle', 'Dispenser Stand'].map((item) => (
@@ -77,7 +78,7 @@ const Footer: React.FC = () => {
           </div>
           
           {/* Contact */}
-          <div>
+          <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
             <h3 className="text-lg font-semibold mb-6">Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-start">
@@ -100,7 +101,10 @@ const Footer: React.FC = () => {
         </div>
         
         {/* Bottom */}
-        <div className="pt-8 border-t border-primary-800 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div 
+          className="pt-8 border-t border-primary-800 flex flex-col md:flex-row justify-between items-center gap-4"
+          data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800"
+        >
           <p className="text-[#0891B2]/80 text-sm">
             &copy; {new Date().getFullYear()} Gangothiri Aqua Processing Unit. All rights reserved.
           </p>

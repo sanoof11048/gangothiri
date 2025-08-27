@@ -5,11 +5,17 @@ type FeatureCardProps = {
   icon: React.ReactNode;
   title: string;
   description: string;
+  aos?: string;
 };
 
-const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) => {
+const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description, aos }) => {
   return (
-    <div className="water-card p-6 glass-effect">
+    <div 
+      className="water-card p-6 glass-effect"
+      data-aos={aos} 
+      data-aos-duration="1000"
+      data-aos-delay="200"
+    >
       <div className="mb-4 text-primary-500">{icon}</div>
       <h3 className="text-xl font-semibold mb-3">{title}</h3>
       <p className="text-gray-600">{description}</p>
@@ -22,22 +28,26 @@ const Features: React.FC = () => {
     {
       icon: <Droplet size={36} strokeWidth={1.5} />,
       title: "Pure & Balanced",
-      description: "Perfect mineral balance with TDS levels optimized for your health and great taste."
+      description: "Perfect mineral balance with TDS levels optimized for your health and great taste.",
+      aos: "fade-up"
     },
     {
       icon: <Shield size={36} strokeWidth={1.5} />,
       title: "Quality Assured",
-      description: "Multi-stage purification process with 24/7 quality monitoring systems."
+      description: "Multi-stage purification process with 24/7 quality monitoring systems.",
+      aos: "fade-up"
     },
     {
       icon: <Award size={36} strokeWidth={1.5} />,
       title: "Certified Excellence",
-      description: "ISO 9001:2015 certified with adherence to strict national health standards."
+      description: "ISO 9001:2015 certified with adherence to strict national health standards.",
+      aos: "fade-up"
     },
     {
       icon: <Thermometer size={36} strokeWidth={1.5} />,
       title: "Eco-Friendly",
-      description: "Sustainable packaging with recyclable materials and reduced carbon footprint."
+      description: "Sustainable packaging with recyclable materials and reduced carbon footprint.",
+      aos: "fade-up"
     }
   ];
 
@@ -50,7 +60,11 @@ const Features: React.FC = () => {
       </div>
       
       <div className="container-custom relative">
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <div 
+          className="text-center max-w-2xl mx-auto mb-16"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
           <h2 className="mb-4">Why Choose Gangothiri Aqua?</h2>
           <p className="text-lg text-gray-600">
             We combine modern technology with nature's best to provide water that's not just pure, but perfect.
@@ -64,6 +78,7 @@ const Features: React.FC = () => {
               icon={feature.icon}
               title={feature.title}
               description={feature.description}
+              aos={feature.aos}
             />
           ))}
         </div>

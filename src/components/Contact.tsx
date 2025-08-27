@@ -5,7 +5,10 @@ const Contact: React.FC = () => {
   return (
     <section id="contact" className="section">
       <div className="container-custom">
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <div
+          className="text-center max-w-2xl mx-auto mb-16"
+          data-aos="fade-up"
+        >
           <h2 className="mb-4">Get In Touch</h2>
           <p className="text-lg text-gray-600">
             Have questions or want to place an order? We're here to help with all your hydration needs.
@@ -14,7 +17,7 @@ const Contact: React.FC = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Contact info */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-1" data-aos="fade-right">
             <div className="bg-white shadow-lg rounded-xl p-8 h-full">
               <h3 className="text-xl font-semibold mb-6">Contact Information</h3>
 
@@ -34,10 +37,7 @@ const Contact: React.FC = () => {
                   <Phone className="text-[#0891B2] mt-1 mr-4" size={20} />
                   <div>
                     <h4 className="font-medium mb-1">Phone Number</h4>
-                    <p className="text-gray-600">
-                      {/* +91 98765 43210<br /> */}
-                      +91 75610 56186
-                    </p>
+                    <p className="text-gray-600">+91 75610 56186</p>
                   </div>
                 </div>
 
@@ -46,8 +46,7 @@ const Contact: React.FC = () => {
                   <div>
                     <h4 className="font-medium mb-1">Email</h4>
                     <p className="text-gray-600">
-                      gangothiriaqua.info@gmail.com<br />
-                      
+                      gangothiriaqua.info@gmail.com
                     </p>
                   </div>
                 </div>
@@ -77,13 +76,13 @@ const Contact: React.FC = () => {
           </div>
 
           {/* Contact form */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2" data-aos="fade-left">
             <div className="bg-white shadow-lg rounded-xl p-8">
               <h3 className="text-xl font-semibold mb-6">Send Us a Message</h3>
 
               <form>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                  <div>
+                  <div data-aos="fade-up" data-aos-delay="100">
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                       Your Name
                     </label>
@@ -95,7 +94,7 @@ const Contact: React.FC = () => {
                     />
                   </div>
 
-                  <div>
+                  <div data-aos="fade-up" data-aos-delay="200">
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                       Email Address
                     </label>
@@ -109,7 +108,7 @@ const Contact: React.FC = () => {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                  <div>
+                  <div data-aos="fade-up" data-aos-delay="300">
                     <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
                       Phone Number
                     </label>
@@ -121,7 +120,7 @@ const Contact: React.FC = () => {
                     />
                   </div>
 
-                  <div>
+                  <div data-aos="fade-up" data-aos-delay="400">
                     <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
                       Subject
                     </label>
@@ -139,7 +138,7 @@ const Contact: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="mb-6">
+                <div className="mb-6" data-aos="fade-up" data-aos-delay="500">
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
                     Your Message
                   </label>
@@ -151,7 +150,11 @@ const Contact: React.FC = () => {
                   ></textarea>
                 </div>
 
-                <button type="submit" className="btn btn-primary w-full md:w-auto">
+                <button
+                  type="submit"
+                  className="btn btn-primary w-full md:w-auto"
+                  data-aos="zoom-in"
+                >
                   Send Message
                 </button>
               </form>
@@ -160,9 +163,13 @@ const Contact: React.FC = () => {
         </div>
 
         {/* Map */}
-        <div className="mt-12 rounded-xl overflow-hidden shadow-lg h-80">
+        <div
+          className="mt-12 rounded-xl overflow-hidden shadow-lg h-80"
+          data-aos="fade-up"
+        >
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.9064515081905!2d76.0339402!3d10.741693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7bf007278c859%3A0x56fcedd3a5a022af!2sGangothiri%20Aqua!5e0!3m2!1sen!2sin!4v1732186035941!5m2!1sen!2sin" width="100%"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.9064515081905!2d76.0339402!3d10.741693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7bf007278c859%3A0x56fcedd3a5a022af!2sGangothiri%20Aqua!5e0!3m2!1sen!2sin!4v1732186035941!5m2!1sen!2sin"
+            width="100%"
             height="100%"
             style={{ border: 0 }}
             allowFullScreen

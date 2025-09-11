@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Info } from 'lucide-react';
 import ProductDetail from './ProductDetails';
-import LTR20 from '../assets/jargpt.png';
+import LTR20 from '../assets/jarGPT.png';
 import dispenser from '../assets/dispenserGpt.png';
 // import LTR from '../assets/Rivus Water Jug on Quartz Countertop.png';
 import bottle_500 from '../assets/500ml_bottle.jpg'

@@ -3,15 +3,10 @@ import { Info } from 'lucide-react';
 import ProductDetail from './ProductDetails';
 import LTR20 from '../assets/jarGPT.png';
 import dispenser from '../assets/dispenserGpt.png';
-// import LTR from '../assets/Rivus Water Jug on Quartz Countertop.png';
-import bottle_500 from '../assets/500ml_bottle.jpg'
-// import bottle_5002 from '../assets/500ml_bottle2.jpg'
-import bottle_1L from '../assets/1L_bottle.jpg'
-import bottle_2L from '../assets/2L_bottle.jpg'
-import dispenserstand from '../assets/dispenser.jpg'
-
-
-
+import bottle_500 from '../assets/500ml_bottle.jpg';
+import bottle_1L from '../assets/1L_bottle.jpg';
+import bottle_2L from '../assets/2L_bottle.jpg';
+import dispenserstand from '../assets/dispenser.jpg';
 
 export type Product = {
   id: number;
@@ -29,7 +24,7 @@ const Products: React.FC = () => {
   const products: Product[] = [
     {
       id: 1,
-      name: "Premium Water Bottle ",
+      name: "Premium Water Bottle",
       size: "500ml",
       image: bottle_500,
       description: "Perfect for on-the-go hydration, our 500ml bottles are convenient and portable.",
@@ -40,7 +35,6 @@ const Products: React.FC = () => {
       name: "Standard Water Bottle",
       size: "1Ltr",
       image: bottle_1L,
-      // image: "https://images.pexels.com/photos/1000084/pexels-photo-1000084.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
       description: "Our 1 liter bottles provide the perfect amount of hydration for daily use.",
       features: ["BPA-free plastic", "Ergonomic design", "Recyclable", "Durable construction"],
       isPopular: true,
@@ -50,7 +44,6 @@ const Products: React.FC = () => {
       name: "Family Size Bottle",
       size: "2Ltr",
       image: bottle_2L,
-      // image: "https://images.pexels.com/photos/3023479/pexels-photo-3023479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
       description: "Ideal for families or office settings, our 2 liter bottles offer great value.",
       features: ["Large capacity", "Handle for easy pouring", "Recyclable", "Space-efficient design"],
     },
@@ -84,17 +77,22 @@ const Products: React.FC = () => {
   return (
     <section id="products" className="section bg-gray-50">
       <div className="container-custom">
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        
+        {/* Heading */}
+        <div className="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
           <h2 className="mb-4">Our Range of Products</h2>
           <p className="text-lg text-gray-600">
             From personal bottles to office dispensers, we have the perfect hydration solution for every need.
           </p>
         </div>
         
+        {/* Products grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((product) => (
+          {products.map((product, index) => (
             <div 
               key={product.id}
+              data-aos="zoom-in"
+              data-aos-delay={index * 100} // staggered animation
               className="water-card bg-white overflow-hidden cursor-pointer group"
               onClick={() => setSelectedProduct(product)}
             >
@@ -104,11 +102,6 @@ const Products: React.FC = () => {
                   alt={product.name} 
                   className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                 />
-                {/* {product.isPopular && (
-                  <div className="absolute top-4 right-4 bg-accent-500 text-white px-3 py-1 rounded-full text-sm font-medium">
-                    Popular
-                  </div>
-                )} */}
               </div>
               <div className="p-6">
                 <div className="flex justify-between items-start">

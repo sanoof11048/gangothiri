@@ -105,9 +105,18 @@ const Footer: React.FC = () => {
           className="pt-8 border-t border-primary-800 flex flex-col md:flex-row justify-between items-center gap-4"
           data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800"
         >
-          <p className="text-[#0891B2]/80 text-sm">
-            &copy; {new Date().getFullYear()} Gangothiri Aqua Processing Unit. All rights reserved.
-          </p>
+         <p className="text-[#0891B2]/80 text-sm">
+  &copy; {new Date().getFullYear()} Gangothiri Aqua Processing Unit. All rights reserved. Made By{" "}
+  <a 
+    href="https://www.instagram.com/webzi.o/" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="text-[#0891B2] hover:underline font-medium"
+  >
+    Webzio
+  </a>
+</p>
+
           <div className="flex space-x-6">
             <a href="#" className="text-[#0891B2]/80 hover:text-[#B2EBF2] text-sm transition-colors">
               Privacy Policy

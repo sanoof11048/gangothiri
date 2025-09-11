@@ -73,7 +73,7 @@ const Navbar: React.FC = () => {
           />
           
           <span
-            className={`font-bold text-xl sm:text-2xl transition-colors ${
+            className={`font-bold mr-10 text-xl sm:text-2xl transition-colors ${
               scrolled ? "text-[#0891B2]" : "text-white"
             }`}
           >
@@ -86,7 +86,7 @@ const Navbar: React.FC = () => {
         </a>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-2 lg:gap-6">
+        <div className="hidden md:flex items-center gap-2 lg:gap-3">
           {navigationItems.map((item) => (
             <a
               key={item.name}

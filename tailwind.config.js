@@ -45,20 +45,6 @@ export default {
         'montserrat': ['Montserrat', 'sans-serif'],
         'inter': ['Inter', 'sans-serif'],
       },
-      animation: {
-        'ripple': 'ripple 2.5s linear infinite',
-        'float': 'float 3s ease-in-out infinite',
-      },
-      keyframes: {
-        ripple: {
-          '0%': { transform: 'scale(0.8)', opacity: 1 },
-          '100%': { transform: 'scale(1.5)', opacity: 0 },
-        },
-        float: {
-          '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-10px)' },
-        },
-      },
     },
   },
   plugins: [],

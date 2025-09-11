@@ -25,6 +25,9 @@ const Hero: React.FC = () => {
         style={{
           backgroundImage: `url(${sahad})`,
         }}
+        // style={{
+        //   backgroundImage: "url('https://images.pexels.com/photos/416528/pexels-photo-416528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750')",
+        // }}
       >
         <div className="absolute inset-0 bg-[#004D40]/60 md:bg-[#004D40]/50"></div>
       </div>
@@ -37,22 +40,15 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative min-h-screen flex flex-col justify-center py-20">
         <div className="max-w-4xl mx-auto text-center md:text-left">
           {/* Mobile-first heading */}
-          {/* <h1
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight tracking-tight"
+          <h1
+            className="text-3xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight tracking-tight"
             data-aos="fade-up"
             data-aos-duration="1000"
           >
             Pure Hydration with{' '}
             <span className="text-[#B2EBF2] block sm:inline">Rivus Water</span>
-          </h1> */}
-           <h1
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight tracking-tight"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            വെള്ളം കുടിക്കൂ,{' '}
-            <span className="text-[#B2EBF2] block sm:inline">ദാഹം മാറ്റൂ</span>
           </h1>
+        
           
           {/* Subheading optimized for mobile */}
           <p

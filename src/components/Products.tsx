@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
 import { Info } from 'lucide-react';
 import ProductDetail from './ProductDetails';
-import LTR20 from '../assets/ChatGPT Image May 15, 2025, 01_57_12 PM.png';
-import dispenser from '../assets/Translucent Water Dispenser in Modern Kitchen.png';
+import LTR20 from '../assets/jargpt.png';
+import dispenser from '../assets/dispenserGpt.png';
 // import LTR from '../assets/Rivus Water Jug on Quartz Countertop.png';
-import bottle from '../assets/bottle.png';
+import bottle_500 from '../assets/500ml_bottle.jpg'
+import bottle_5002 from '../assets/500ml_bottle2.jpg'
+import bottle_1L from '../assets/1L_bottle.jpg'
+import bottle_2L from '../assets/2L_bottle.jpg'
+import dispenserstand from '../assets/dispenser.jpg'
+
 
 
 
@@ -26,7 +31,7 @@ const Products: React.FC = () => {
       id: 1,
       name: "Premium Water Bottle ",
       size: "500ml",
-      image: bottle,
+      image: bottle_500,
       description: "Perfect for on-the-go hydration, our 500ml bottles are convenient and portable.",
       features: ["BPA-free plastic", "Easy grip design", "Recyclable", "Perfect for travel"],
     },
@@ -34,7 +39,7 @@ const Products: React.FC = () => {
       id: 2,
       name: "Standard Water Bottle",
       size: "1Ltr",
-      image: bottle,
+      image: bottle_1L,
       // image: "https://images.pexels.com/photos/1000084/pexels-photo-1000084.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
       description: "Our 1 liter bottles provide the perfect amount of hydration for daily use.",
       features: ["BPA-free plastic", "Ergonomic design", "Recyclable", "Durable construction"],
@@ -44,7 +49,7 @@ const Products: React.FC = () => {
       id: 3,
       name: "Family Size Bottle",
       size: "2Ltr",
-      image: bottle,
+      image: bottle_2L,
       // image: "https://images.pexels.com/photos/3023479/pexels-photo-3023479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
       description: "Ideal for families or office settings, our 2 liter bottles offer great value.",
       features: ["Large capacity", "Handle for easy pouring", "Recyclable", "Space-efficient design"],
@@ -62,7 +67,7 @@ const Products: React.FC = () => {
       id: 5,
       name: "Dispenser Stand",
       size: "Standard",
-      image: "https://images.pexels.com/photos/7511792/pexels-photo-7511792.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      image: dispenserstand,
       description: "Sturdy dispenser stands designed to hold our 20 liter water jars.",
       features: ["Stable design", "Easy water dispensing", "Durable construction", "Compatible with all our jars"],
     },
@@ -93,7 +98,7 @@ const Products: React.FC = () => {
               className="water-card bg-white overflow-hidden cursor-pointer group"
               onClick={() => setSelectedProduct(product)}
             >
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-72 overflow-hidden">
                 <img 
                   src={product.image} 
                   alt={product.name} 

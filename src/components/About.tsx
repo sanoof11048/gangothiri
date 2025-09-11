@@ -1,6 +1,6 @@
 import React from 'react';
 import { DropletIcon, Award, Activity, Users } from 'lucide-react';
-
+import bottles from '../assets/Products.jpg'
 const About: React.FC = () => {
   const stats = [
     { icon: <DropletIcon size={28} />, value: "10M+", label: "Bottles Sold" },
@@ -56,7 +56,7 @@ const About: React.FC = () => {
           <div data-aos="fade-left">
             <div className="relative rounded-xl overflow-hidden shadow-xl">
               <img 
-                src="https://images.pexels.com/photos/4553035/pexels-photo-4553035.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750" 
+                src={bottles}
                 alt="Water processing facility" 
                 className="w-full h-auto" 
               />

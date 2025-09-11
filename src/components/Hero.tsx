@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import bottle from '../assets/bottle.png';
-import jar from '../assets/Rivus Water Jug on Quartz Countertop.png';
-import dispenser from '../assets/Translucent Water Dispenser in Modern Kitchen.png';
+import sahad from '../assets/sahad.jpg'
 import { ChevronDown } from 'lucide-react';
 
 const Hero: React.FC = () => {
@@ -25,27 +23,35 @@ const Hero: React.FC = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('https://images.pexels.com/photos/416528/pexels-photo-416528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750')",
+          backgroundImage: `url(${sahad})`,
         }}
       >
         <div className="absolute inset-0 bg-[#004D40]/60 md:bg-[#004D40]/50"></div>
       </div>
 
       {/* Background blobs - Hidden on mobile for cleaner look */}
-      <div className="hidden md:block blob bg-[#80DEEA] top-1/4 right-1/3 w-96 h-96 z-20 opacity-30"></div>
-      <div className="hidden md:block blob bg-[#4DD0E1] bottom-1/4 left-1/4 w-64 h-64 opacity-30"></div>
+      {/* <div className="hidden md:block blob bg-[#80DEEA] top-1/4 right-1/3 w-96 h-96 z-20 opacity-30"></div>
+      <div className="hidden md:block blob bg-[#4DD0E1] bottom-1/4 left-1/4 w-64 h-64 opacity-30"></div> */}
 
       {/* Hero content */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative min-h-screen flex flex-col justify-center py-20">
         <div className="max-w-4xl mx-auto text-center md:text-left">
           {/* Mobile-first heading */}
-          <h1
+          {/* <h1
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight tracking-tight"
             data-aos="fade-up"
             data-aos-duration="1000"
           >
             Pure Hydration with{' '}
             <span className="text-[#B2EBF2] block sm:inline">Rivus Water</span>
+          </h1> */}
+           <h1
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight tracking-tight"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            വെള്ളം കുടിക്കൂ,{' '}
+            <span className="text-[#B2EBF2] block sm:inline">ദാഹം മാറ്റൂ</span>
           </h1>
           
           {/* Subheading optimized for mobile */}
@@ -70,7 +76,7 @@ const Hero: React.FC = () => {
               href="#products" 
               className="w-full sm:w-auto btn bg-[#26C6DA] hover:bg-[#00BCD4] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg group min-w-[200px] sm:min-w-0"
             >
-              Explore Rivus Products
+              Explore Products
               <span className="ml-2 transition-transform group-hover:translate-x-1">→</span>
             </a>
             <a 

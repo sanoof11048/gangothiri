@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Droplet, Menu, X } from "lucide-react";
+import logo from '../assets/logo.png';
+
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -69,13 +71,18 @@ const Navbar: React.FC = () => {
             fill="currentColor"
             fillOpacity={0.3}
           />
+          
           <span
             className={`font-bold text-xl sm:text-2xl transition-colors ${
               scrolled ? "text-[#0891B2]" : "text-white"
             }`}
           >
-            Rivus
+            Gangothiri 
+          <span className={`font-bold text-lg sm:text-xl transition-colors ${
+              scrolled ? "text-[#07bcea]" : "text-[#5eceea]"
+            }`}>Aqua</span>
           </span>
+
         </a>
 
         {/* Desktop Menu */}

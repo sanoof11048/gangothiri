@@ -5,7 +5,7 @@ import LTR20 from '../assets/jargpt.png';
 import dispenser from '../assets/dispenserGpt.png';
 // import LTR from '../assets/Rivus Water Jug on Quartz Countertop.png';
 import bottle_500 from '../assets/500ml_bottle.jpg'
-import bottle_5002 from '../assets/500ml_bottle2.jpg'
+// import bottle_5002 from '../assets/500ml_bottle2.jpg'
 import bottle_1L from '../assets/1L_bottle.jpg'
 import bottle_2L from '../assets/2L_bottle.jpg'
 import dispenserstand from '../assets/dispenser.jpg'

@@ -1,6 +1,6 @@
 import React from 'react';
 import { DropletIcon, Award, Activity, Users } from 'lucide-react';
-import bottles from '../assets/Products.jpg'
+import bottles from '../assets/ProductsGPT.png'
 const About: React.FC = () => {
   const stats = [
     { icon: <DropletIcon size={28} />, value: "10M+", label: "Bottles Sold" },

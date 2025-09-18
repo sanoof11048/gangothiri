@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
           className="text-center max-w-2xl mx-auto mb-16"
           data-aos="fade-up"
         >
-          <h2 className="mb-4">Get In Touch</h2>
+          <h2 className="mb-4">Contact Gangothiri Aqua</h2>
           <p className="text-lg text-gray-600">
             Have questions or want to place an order? We're here to help with all your hydration needs.
           </p>

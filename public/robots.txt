@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gangothiriaqua.in/sitemap.xml

@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
           className="text-center max-w-2xl mx-auto mb-16"
           data-aos="fade-up"
         >
-          <h2 className="mb-4">Contact Gangothiri Aqua</h2>
+          <h2 className="mb-4">Contact Gangothri Aqua</h2>
           <p className="text-lg text-gray-600">
             Have questions or want to place an order? We're here to help with all your hydration needs.
           </p>
@@ -46,7 +46,7 @@ const Contact: React.FC = () => {
                   <div>
                     <h4 className="font-medium mb-1">Email</h4>
                     <p className="text-gray-600">
-                      gangothiriaqua.info@gmail.com
+                      gangothriaqua.info@gmail.com
                     </p>
                   </div>
                 </div>
@@ -168,14 +168,14 @@ const Contact: React.FC = () => {
           data-aos="fade-up"
         >
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.9064515081905!2d76.0339402!3d10.741693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7bf007278c859%3A0x56fcedd3a5a022af!2sGangothiri%20Aqua!5e0!3m2!1sen!2sin!4v1732186035941!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.9064515081905!2d76.0339402!3d10.741693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7bf007278c859%3A0x56fcedd3a5a022af!2sGangothri%20Aqua!5e0!3m2!1sen!2sin!4v1732186035941!5m2!1sen!2sin"
             width="100%"
             height="100%"
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Gangothiri Aqua location"
+            title="Gangothri Aqua location"
           ></iframe>
         </div>
       </div>

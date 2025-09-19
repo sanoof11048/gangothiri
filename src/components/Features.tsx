@@ -65,7 +65,7 @@ const Features: React.FC = () => {
           data-aos="zoom-in"
           data-aos-duration="1000"
         >
-          <h2 className="mb-4">Why Choose Gangothiri Aqua?</h2>
+          <h2 className="mb-4">Why Choose Gangothri Aqua?</h2>
           <p className="text-lg text-gray-600">
             We combine modern technology with nature's best to provide water that's not just pure, but perfect.
           </p>

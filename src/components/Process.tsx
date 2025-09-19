@@ -42,7 +42,7 @@ const Process: React.FC = () => {
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="mb-4">Our Water Processing Journey</h2>
           <p className="text-lg text-gray-600">
-            Discover the meticulous process that ensures every drop of Gangothiri water meets our premium standards.
+            Discover the meticulous process that ensures every drop of Gangothri water meets our premium standards.
           </p>
         </div>
         

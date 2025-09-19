@@ -74,12 +74,12 @@ const ProductsSEO: React.FC = () => {
               "@context": "https://schema.org",
               "@type": "Product",
               "name": `Rivus ${product.name} ${product.size}`,
-              "image": `https://gangothiriaqua.in/assets/${product.image}`,
+              "image": `https://gangothriaqua.in/assets/${product.image}`,
               "description": product.description,
               "brand": { "@type": "Brand", "name": "Rivus" },
               "offers": {
                 "@type": "Offer",
-                "url": "https://gangothiriaqua.in/#products",
+                "url": "https://gangothriaqua.in/#products",
                 "priceCurrency": "INR",
                 "price": "40", // Replace with actual
                 "availability": "https://schema.org/InStock"

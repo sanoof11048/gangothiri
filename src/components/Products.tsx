@@ -138,6 +138,7 @@ const products: Product[] = [
                 <img 
                   src={product.image} 
                   alt={`Rivus ${product.name} ${product.size}`}
+                  loading="lazy" 
                   className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                 />
               </div>

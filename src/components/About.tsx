@@ -29,7 +29,7 @@ const About: React.FC = () => {
           <div data-aos="fade-right">
             <h2 className="mb-6">Our Story</h2>
             <p className="mb-6 text-gray-600">
-              Established in 2010, Gangothiri Aqua Processing Unit began with a simple mission: to provide the purest water with perfect mineral balance to every household and business.
+              Established in 2010, Gangothri Aqua Processing Unit began with a simple mission: to provide the purest water with perfect mineral balance to every household and business.
             </p>
             <p className="mb-10 text-gray-600">
               Over the years, we've grown from a small local supplier to one of the region's most trusted water providers, maintaining our commitment to quality while expanding our range of products to meet diverse needs.

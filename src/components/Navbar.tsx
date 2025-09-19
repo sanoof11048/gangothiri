@@ -68,7 +68,7 @@ const Navbar: React.FC = () => {
         <a href="#home" className="flex items-center gap-2 group" onClick={(e) => { e.preventDefault(); handleNavClick("#home"); }}>
           <Droplet size={32} className={`transition-all duration-300 group-hover:scale-110 ${scrolled ? "text-[#0891B2]" : "text-[#26C6DA]"}`} strokeWidth={1.5} fill="currentColor" fillOpacity={0.3} />
           <span className={`font-bold mr-10 text-xl sm:text-2xl transition-colors ${scrolled ? "text-[#0891B2]" : "text-white"}`}>
-            Gangothiri <span className={`font-bold text-lg sm:text-xl transition-colors ${scrolled ? "text-[#07bcea]" : "text-[#5eceea]"}`}>Aqua</span>
+            Gangothri <span className={`font-bold text-lg sm:text-xl transition-colors ${scrolled ? "text-[#07bcea]" : "text-[#5eceea]"}`}>Aqua</span>
           </span>
         </a>
 

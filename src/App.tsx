@@ -14,21 +14,39 @@ import Products from "./components/Products";
 const App: React.FC = () => {
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => { AOS.init({ duration: 800, easing: "ease-in-out", once: true }); }, []);
+  // Initialize AOS
+  useEffect(() => {
+    AOS.init({ duration: 800, easing: "ease-in-out", once: true });
+  }, []);
 
-  useEffect(() => { const timer = setTimeout(() => setLoading(false), 1000); return () => clearTimeout(timer); }, []);
+  // Dynamic loading based on browser load
+  useEffect(() => {
+    const handleLoad = () => setLoading(false);
 
-  if (loading) return (
-    <div className="flex items-center justify-center min-h-screen bg-[#0891B2]">
-      <div className="flex flex-col items-center gap-4">
-        <div className="w-12 h-12 border-4 border-white/40 border-t-white rounded-full animate-spin"></div>
-        <p className="text-white font-medium text-lg">Loading...</p>
+    if (document.readyState === "complete") {
+      // Already loaded
+      setLoading(false);
+    } else {
+      // Wait for full page load (including images, stylesheets, etc.)
+      window.addEventListener("load", handleLoad);
+    }
+
+    return () => window.removeEventListener("load", handleLoad);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center min-h-screen bg-[#0891B2]">
+        <div className="flex flex-col items-center gap-4">
+          <div className="w-12 h-12 border-4 border-white/40 border-t-white rounded-full animate-spin"></div>
+          <p className="text-white font-medium text-lg">Loading...</p>
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 
   return (
-    <div className="min-h-screen min-w-screen flex flex-col">
+    <>
       <Navbar />
       <main className="flex-grow">
         <Hero />
@@ -39,7 +57,7 @@ const App: React.FC = () => {
         <Contact />
       </main>
       <Footer />
-    </div>
+    </>
   );
 };
 

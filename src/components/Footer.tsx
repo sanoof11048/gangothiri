@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
                 fillOpacity={0.2}
               />
               <span className="font-montserrat font-bold text-2xl">
-                <span className="text-[#B2EBF2]">Gangothiri</span>
+                <span className="text-[#B2EBF2]">Gangothri</span>
                 <span>Aqua</span>
               </span>
             </div>
@@ -87,7 +87,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-start">
                 <Mail size={18} className="text-[#B2EBF2] mt-1 mr-3 flex-shrink-0" />
-                <span className="text-[#0891B2]/80">gangothiriaqua.info@gmail.com</span>
+                <span className="text-[#0891B2]/80">gangothriaqua.info@gmail.com</span>
               </li>
               <li className="flex items-start">
                 <Droplet size={18} className="text-[#B2EBF2] mt-1 mr-3 flex-shrink-0" />
@@ -106,7 +106,7 @@ const Footer: React.FC = () => {
           data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800"
         >
          <p className="text-[#0891B2]/80 text-sm">
-  &copy; {new Date().getFullYear()} Gangothiri Aqua Processing Unit. All rights reserved. Made By{" "}
+  &copy; {new Date().getFullYear()} Gangothri Aqua Processing Unit. All rights reserved. Made By{" "}
   <a 
     href="https://www.instagram.com/webzi.o/" 
     target="_blank" 
